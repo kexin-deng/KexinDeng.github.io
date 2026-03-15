@@ -295,7 +295,62 @@ agentic AI for market efficiency, liquidity provision, and systemic risk.
   </td>
 </tr>
 			  
-			  
+<tr onmouseout="news_stop()" onmouseover="news_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/newsdemo1.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function news_start() {
+        document.getElementById('news_image').style.opacity = "1";
+      }
+      function news_stop() {
+        document.getElementById('news_image').style.opacity = "0";
+      }
+      news_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="#">
+      <span class="papertitle">
+      News Sentiment Analysis and Summarization for Financial Markets
+      </span>
+    </a>
+    <br>
+    <strong>Kexin Deng</strong>, 
+	<a href="https://www.linkedin.com/in/sirui-zhao-steven/">Sirui Zhao ,</a>
+	<a href="https://www.linkedin.com/in/weihang-lin-leo/">Weihang Lin
+    <br>
+    Cornell Financial Engineering Manhattan, Cornell University
+    <br>
+    <em>ORIE 5253 Asset Management Seminar</em>, 2025
+    <br>
+	<br>
+	Mentored by <a href="https://www.alliancebernstein.com/americas/en/investor/bio.andrew-chin.html">Andrew Chin (Chief Artificial Intelligence Officer at AllianceBernstein)</a></em>
+	<br>
+    <a href="data/Asset_Management_Seminar.pdf">paper</a> /
+    <a href="https://github.com/kexin-deng">code</a> /
+    <a href="#">demo</a>
+    <p></p>
+    <p>
+    Built an end-to-end platform for extracting structured investment signals
+    from financial news. The system ingests company-specific news articles,
+    applies FinBERT to generate article-level sentiment scores, and aggregates
+    them into daily stock-level sentiment time series for S&P 500 constituents.
+    The pipeline combines sentiment signals with price dynamics to visualize
+    sentiment–return co-movements and generates simple Buy/Hold/Sell regimes
+    based on smoothed sentiment indicators. An LLM-based agent summarizes
+    daily news flows into concise investor-friendly insights, enabling faster
+    interpretation of market-moving events.
+    The platform integrates data ingestion, NLP-based sentiment modeling,
+    signal aggregation, and interactive dashboards, demonstrating how
+    large-scale financial text data can be transformed into actionable
+    signals for quantitative asset management workflows.
+    </p>
+  </td>
+</tr>
+
+		
 <tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
