@@ -300,6 +300,7 @@ agentic AI for market efficiency, liquidity provision, and systemic risk.
     <div class="one">
       <img id="news_demo" src="images/news1.png" width="160">
     </div>
+
     <script type="text/javascript">
       var news_images = [
         "images/news1.png",
@@ -307,16 +308,21 @@ agentic AI for market efficiency, liquidity provision, and systemic risk.
         "images/news3.png",
         "images/news4.png"
       ];
+
       var news_index = 0;
-      var news_interval;
+      var news_interval = null;
+
       function news_start() {
+        if (news_interval) return;
         news_interval = setInterval(function() {
           news_index = (news_index + 1) % news_images.length;
           document.getElementById("news_demo").src = news_images[news_index];
-        }, 500);
+        }, 600);
       }
+
       function news_stop() {
         clearInterval(news_interval);
+        news_interval = null;
         news_index = 0;
         document.getElementById("news_demo").src = news_images[0];
       }
