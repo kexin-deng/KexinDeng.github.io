@@ -379,6 +379,54 @@ agentic AI for market efficiency, liquidity provision, and systemic risk.
   </td>
 </tr>
 
+<tr onmouseout="cluster_stop()" onmouseover="cluster_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img id="cluster_demo" src="images/cluster1.png" width="160">
+    </div>
+    <script type="text/javascript">
+      var cluster_images = [
+        "images/cluster1.png",
+        "images/cluster2.png",
+        "images/cluster3.png"
+      ];
+      var cluster_index = 0;
+      var cluster_interval;
+      function cluster_start() {
+        cluster_interval = setInterval(function() {
+          cluster_index = (cluster_index + 1) % cluster_images.length;
+          document.getElementById("cluster_demo").src = cluster_images[cluster_index];
+        }, 600);
+      }
+      function cluster_stop() {
+        clearInterval(cluster_interval);
+        cluster_index = 0;
+        document.getElementById("cluster_demo").src = cluster_images[0];
+      }
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <span class="papertitle">
+      Clustering and Network-Based Portfolio Optimization with Shrinkage and CVaR
+    </span>
+    <br>
+    <strong>Kexin Deng</strong>, Olivia Guo, Weihang Lin
+    <br>
+    <span style="color:#666;"><em>
+    Cornell University — Operations Research and Information Engineering
+    </em></span>
+    <br>
+    <em>ORIE Asset Management Project</em>, 2025
+    <p>
+    Developed a machine-learning–driven portfolio construction framework combining 
+    clustering-based stock selection with shrinkage covariance estimation and CVaR 
+    optimization. Backtests on S&P 500 equities (2020–2023) show improved stability 
+    and downside risk control, achieving Sharpe ratios above 1.6 and significantly 
+    outperforming the S&P 500 benchmark.
+    </p>
+  </td>
+</tr>
+
 		
 <tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
   <td style="padding:16px;width:20%;vertical-align:middle">
