@@ -237,7 +237,59 @@ agentic AI for market efficiency, liquidity provision, and systemic risk.
 </td>
 </tr>
 
-
+<tr onmouseout="vix_stop()" onmouseover="vix_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/vixdemo1.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function vix_start() {
+        document.getElementById('vix_image').style.opacity = "1";
+      }
+      function vix_stop() {
+        document.getElementById('vix_image').style.opacity = "0";
+      }
+      vix_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="#">
+      <span class="papertitle">
+      Forecasting VIX Spikes with Machine Learning and Market Regime Signals
+      </span>
+    </a>
+    <br>
+	<a href="https://www.linkedin.com/in/sirui-zhao-steven/">Sirui Zhao</a>,
+	<strong>Kexin Deng</strong>,
+    <a href="https://www.linkedin.com/in/v1p98">Yichen Gao</a>,
+    <a href="https://www.linkedin.com/in/yihan-hank-zhao">Yihan Zhao</a>
+    <br>
+    Cornell Financial Engineering Manhattan, Cornell University
+    <br>
+    <em>Systematic Risk Modeling / Volatility Forecasting</em>, 2025
+    <br>
+    <a href="data/VolatilitySpikepaper.pdf">paper</a> /
+    <p></p>
+    <p>
+    Developed a machine learning framework to forecast extreme spikes in the
+    CBOE Volatility Index (VIX) using cross-asset market signals and macroeconomic
+    indicators. The system integrates equity market features, options-implied
+    volatility metrics, macro factors, and market microstructure signals to
+    detect early-warning patterns preceding volatility explosions.
+    The feature pipeline incorporates realized volatility, term structure
+    dynamics of VIX futures, equity index momentum, credit spreads,
+    liquidity indicators, and macroeconomic variables from the FRED database.
+    Multiple classification and regression models including Gradient Boosting,
+    Random Forest, and neural networks are trained to predict the probability
+    of large VIX spikes and regime transitions.
+    The model is evaluated on historical market stress events such as the
+    COVID crash, inflation shocks, and volatility regime shifts, demonstrating
+    improved early detection of volatility surges and enabling systematic
+    portfolio protection strategies for risk-managed equity portfolios.
+    </p>
+  </td>
+</tr>
+			  
 			  
 <tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
   <td style="padding:16px;width:20%;vertical-align:middle">
