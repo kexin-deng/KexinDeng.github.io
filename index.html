@@ -573,24 +573,24 @@ higher market efficiencies in markets around the world.
       <img id="mutual_demo" src="images/mutual1.png" width="160">
     </div>
     <script type="text/javascript">
-      var trex_images = [
+      var mutual_images = [
         "images/mutual1.png",
         "images/mutual2.png",
         "images/mutual3.png",
 		"images/mutual4.png"
       ];
-      var trex_index = 0;
-      var trex_interval;
-      function trex_start() {
-        trex_interval = setInterval(function() {
-          trex_index = (trex_index + 1) % trex_images.length;
-          document.getElementById("trex_demo").src = trex_images[trex_index];
+      var mutual_index = 0;
+      var mutual_interval;
+      function mutual_start() {
+        mutual_interval = setInterval(function() {
+          mutual_index = (mutual_index + 1) % mutual_images.length;
+          document.getElementById("mutual_demo").src = mutual_images[mutual_index];
         }, 500);
       }
-      function trex_stop() {
-        clearInterval(trex_interval);
-        trex_index = 0;
-        document.getElementById("trex_demo").src = trex_images[0];
+      function mutual_stop() {
+        clearInterval(mutual_interval);
+        mutual_index = 0;
+        document.getElementById("mutual_demo").src = mutual_images[0];
       }
     </script>
   </td>
