@@ -574,7 +574,68 @@ higher market efficiencies in markets around the world.
     <p>
       This project addresses a relational prediction task where the objective is not to classify individual inputs, but to model the interaction between two inputs. Using a Siamese architecture with a shared ResNet50 backbone adapted for grayscale images, each input is encoded into a comparable feature representation, which is then combined through concatenation and passed into a fully connected classifier to capture pairwise dynamics. Beyond architecture design, performance gains were driven primarily by training strategy, including mixed precision for stability in deep networks, balanced binary cross-entropy to address class imbalance, cosine warm restarts for optimization, and F1-based threshold tuning to better align training with evaluation metrics. The final model achieved 0.9048 accuracy on the private leaderboard (Top 4 out of 91), significantly outperforming CNN and ResNet18 baselines. This project highlights that for relational tasks, explicitly modeling interaction structure is often more critical than increasing model complexity, and demonstrates how training methodology can be as important as model architecture in achieving state-of-the-art performance.  </td>
 </tr>
-	
+
+<tr onmouseout="mutual_stop()" onmouseover="mutual_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img id="mutual_demo" src="images/mutual1.png" width="160">
+    </div>
+    <script type="text/javascript">
+      var trex_images = [
+        "images/mutual1.png",
+        "images/mutual2.png",
+        "images/mutual3.png",
+		"images/mutual4.png"
+      ];
+      var trex_index = 0;
+      var trex_interval;
+      function trex_start() {
+        trex_interval = setInterval(function() {
+          trex_index = (trex_index + 1) % trex_images.length;
+          document.getElementById("trex_demo").src = trex_images[trex_index];
+        }, 500);
+      }
+      function trex_stop() {
+        clearInterval(trex_interval);
+        trex_index = 0;
+        document.getElementById("trex_demo").src = trex_images[0];
+      }
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="#">
+      <span class="papertitle">
+      The Impact of the COVID-19 Pandemic on Chinese Mutual Funds Investors
+      </span>
+    </a>
+    <br>
+    <strong>Kexin Deng</strong>
+    <br>
+	<em style="color:#777;">
+	NYU, Alipay
+	</em>
+    <br>
+    <em>AI/ML Applications to Trading & Execution</em>, 2025.9–2025.12  
+	<br>
+    <em>Mentored by <a href="https://shanghai.nyu.edu/academics/faculty/directory/guodong-chen">Guodong Chen</a>, <a href="https://shanghai.nyu.edu/academics/faculty/directory/yiqing-lu">Yiqing Lv</a><em>
+    <br>
+    <a href="data/DS_Impact-of-COVID-19-on-Chinese-Mutual-Funds-Investors.pdf">paper</a>
+    <p></p>
+    <p>
+    This research explores the impact of the COVID-19 pandemic on Chinese mutual fund investors across different wealth levels, utilizing data from the Alipay
+	AntFin Open Research Laboratory and employing two-way fixed effects and
+	difference-in-differences analyses. Wealthier investors were observed cashing
+	out and reducing called investments while maintaining higher overall investment levels post-pandemic. The study delves into changes in dispositional
+	effect, portfolio rebalancing, timing, and alpha risk. City-level severity measurements suggest increased mutual fund turnover and net flow in more severe
+	pandemic situations, favoring stock and mixed funds in more severe cities while
+	less favoring money market funds. The research suggests that extreme health
+	events can prompt investor behavior shifts beyond the traditional diagrams, offering a Chinese mutual fund perspective and advocating for the consideration
+	of inequality in financial market assessments during COVID-19 and similar
+	health crises.
+    </p>
+  </td>
+</tr>
+		
           </tbody></table>
 
           
